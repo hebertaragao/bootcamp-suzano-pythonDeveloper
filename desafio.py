@@ -51,7 +51,7 @@ def sacar(*, saldo, valor, extrato, limite, numero_saques, limite_saques):
     numero_saques += 1
     return saldo, extrato
 
-def depositar(/, saldo, valor, extrato):
+def depositar(saldo, valor, extrato):
     saldo += valor
     extrato.append(f"Depósito: +{valor}")
     return saldo, extrato
